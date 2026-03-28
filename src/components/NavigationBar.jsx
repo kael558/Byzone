@@ -68,7 +68,7 @@ const NavigationBar = () => {
             onClick={(e) => handleNavClick(e, 'home')}
             className="flex items-center space-x-2 flex-shrink-0"
           >
-            <img src="/logo-transparent-bg.png" alt="Byzone CONSTRUCTION" className="h-9 w-auto" />
+            <img src={`${import.meta.env.BASE_URL}logo-transparent-bg.png`} alt="Byzone CONSTRUCTION" className="h-9 w-auto" />
             <span className="font-bold text-brand-blue text-lg hidden sm:block">Byzone CONSTRUCTION</span>
           </a>
 

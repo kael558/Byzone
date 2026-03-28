@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import { vitePrerenderPlugin } from 'vite-prerender-plugin'
 
 export default defineConfig({
-  base: '/',
+  base: '/Byzone/',
   plugins: [
     react(),
     ...vitePrerenderPlugin({

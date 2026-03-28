@@ -99,7 +99,7 @@
       "Properties": {
         "Code": {
           "S3Bucket": "serverless-framework-deployments-us-east-1-dd0271d4-21c5",
-          "S3Key": "serverless/byzone-api/dev/1774733620084-2026-03-28T21:33:40.084Z/byzone-api.zip"
+          "S3Key": "serverless/byzone-api/dev/1774734719371-2026-03-28T21:51:59.371Z/byzone-api.zip"
         },
         "Handler": "api/send-quote.handler",
         "Runtime": "nodejs20.x",
@@ -111,7 +111,7 @@
           "Variables": {
             "SES_FROM_EMAIL": "rahel.gunaratne@gmail.com",
             "SES_TO_EMAIL": "rahel.gunaratne@gmail.com",
-            "ALLOWED_ORIGIN": "https://byzone.ca"
+            "ALLOWED_ORIGINS": "https://byzone.ca,https://kael558.github.io"
           }
         },
         "Role": {
@@ -125,14 +125,14 @@
         "SendQuoteLogGroup"
       ]
     },
-    "SendQuoteLambdaVersionrlEtfy5R80r0rB3e8tLC1E8CKwS5d1jQuyZPTut8tc": {
+    "SendQuoteLambdaVersiongFlfUvsr4KxV0tYhQqjB6fBtQwlj2Ikmjl58pspU": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "SendQuoteLambdaFunction"
         },
-        "CodeSha256": "EMRPedHnXpya+cqM+lF2qa+7mvvkh6DOT6Iag6dCy9Y=",
+        "CodeSha256": "uhBG/rYRnjh+WRDR9t/KqiuGwUwmw6Ea1dC1lFoOZFE=",
         "Description": "Receives quote form submissions and emails them via SES"
       }
     },
@@ -263,7 +263,7 @@
     "SendQuoteLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "SendQuoteLambdaVersionrlEtfy5R80r0rB3e8tLC1E8CKwS5d1jQuyZPTut8tc"
+        "Ref": "SendQuoteLambdaVersiongFlfUvsr4KxV0tYhQqjB6fBtQwlj2Ikmjl58pspU"
       },
       "Export": {
         "Name": "sls-byzone-api-dev-SendQuoteLambdaFunctionQualifiedArn"

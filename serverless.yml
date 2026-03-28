@@ -11,7 +11,7 @@ provider:
   environment:
     SES_FROM_EMAIL: rahel.gunaratne@gmail.com
     SES_TO_EMAIL: rahel.gunaratne@gmail.com
-    ALLOWED_ORIGIN: https://byzone.ca
+    ALLOWED_ORIGINS: https://byzone.ca,https://kael558.github.io
   iam:
     role:
       statements:

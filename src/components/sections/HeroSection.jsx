@@ -12,7 +12,7 @@ const HeroSection = () => {
       id="home"
       className="relative min-h-screen flex items-center justify-center bg-gray-900 overflow-hidden"
       style={{
-        backgroundImage: `url('/hero.jpg')`,
+        backgroundImage: `url('${import.meta.env.BASE_URL}hero.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
@@ -24,7 +24,7 @@ const HeroSection = () => {
         {/* Logo */}
         <div className="flex justify-center mb-8">
           <img
-            src="/logo-transparent-bg.png"
+            src={`${import.meta.env.BASE_URL}logo-transparent-bg.png`}
             alt="Byzone CONSTRUCTION"
             className="h-28 w-auto drop-shadow-xl"
           />

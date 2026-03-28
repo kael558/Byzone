@@ -45,7 +45,7 @@ const AboutSection = () => {
           <div className="relative">
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl bg-gray-200">
               <img
-                src="/about.jpg"
+                src={`${import.meta.env.BASE_URL}about.jpg`}
                 alt="By Zone professional at work"
                 className="w-full h-full object-cover"
                 onError={(e) => {

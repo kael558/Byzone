@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <img src="/logo-transparent-bg.png" alt="Byzone CONSTRUCTION" className="h-16 w-auto mb-4" />
+            <img src={`${import.meta.env.BASE_URL}logo-transparent-bg.png`} alt="Byzone CONSTRUCTION" className="h-16 w-auto mb-4" />
             <p className="text-gray-300 text-sm font-semibold">Byzone CONSTRUCTION</p>
             <p className="text-gray-400 text-sm mt-1">
               Handyman · Windows &amp; Doors · Home Renovation

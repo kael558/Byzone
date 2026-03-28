@@ -115,10 +115,10 @@ function escapeHtml(str) {
 }
 
 function corsHeaders(origin) {
-  // Restrict to your domain in production
-  const allowed = process.env.ALLOWED_ORIGIN || '*';
+  const allowed = (process.env.ALLOWED_ORIGINS || '').split(',').map((s) => s.trim());
+  const allowedOrigin = allowed.includes(origin) ? origin : allowed[0] || '*';
   return {
-    'Access-Control-Allow-Origin': allowed,
+    'Access-Control-Allow-Origin': allowedOrigin,
     'Access-Control-Allow-Methods': 'POST, OPTIONS',
     'Access-Control-Allow-Headers': 'Content-Type',
   };

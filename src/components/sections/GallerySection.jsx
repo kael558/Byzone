@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import { FaTimes } from 'react-icons/fa';
 
+const BASE = import.meta.env.BASE_URL;
 const GALLERY_IMAGES = [
-  { src: '/gallery/gallery-1.jpg', alt: 'Window installation work' },
-  { src: '/gallery/gallery-2.jpg', alt: 'Door replacement project' },
-  { src: '/gallery/gallery-3.jpg', alt: 'Interior handyman repair' },
-  { src: '/gallery/gallery-4.jpg', alt: 'Home renovation project' },
-  { src: '/gallery/gallery-5.jpg', alt: 'Exterior maintenance work' },
-  { src: '/gallery/gallery-6.jpg', alt: 'Drywall repair completed' },
-  { src: '/gallery/gallery-7.jpg', alt: 'Deck refinishing project' },
-  { src: '/gallery/gallery-8.jpg', alt: 'Finished renovation work' },
+  { src: `${BASE}gallery/gallery-1.jpg`, alt: 'Window installation work' },
+  { src: `${BASE}gallery/gallery-2.jpg`, alt: 'Door replacement project' },
+  { src: `${BASE}gallery/gallery-3.jpg`, alt: 'Interior handyman repair' },
+  { src: `${BASE}gallery/gallery-4.jpg`, alt: 'Home renovation project' },
+  { src: `${BASE}gallery/gallery-5.jpg`, alt: 'Exterior maintenance work' },
+  { src: `${BASE}gallery/gallery-6.jpg`, alt: 'Drywall repair completed' },
+  { src: `${BASE}gallery/gallery-7.jpg`, alt: 'Deck refinishing project' },
+  { src: `${BASE}gallery/gallery-8.jpg`, alt: 'Finished renovation work' },
 ];
 
 const GallerySection = () => {
