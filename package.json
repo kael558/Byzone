@@ -1,0 +1,30 @@
+{
+  "name": "byzone",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://byzone.ca",
+  "dependencies": {
+    "@aws-sdk/client-ses": "^3.1019.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-helmet-async": "^2.0.5",
+    "react-icons": "^5.3.0",
+    "react-router-dom": "^6.26.1",
+    "vite-prerender-plugin": "^0.5.13"
+  },
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.1.1",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.10",
+    "vite": "^5.4.8"
+  }
+}
